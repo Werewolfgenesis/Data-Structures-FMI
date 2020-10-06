@@ -1,5 +1,4 @@
 #include <iostream>
-//queue => last in first out
 template <class T>
 
 class Vector

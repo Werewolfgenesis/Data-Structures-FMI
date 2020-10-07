@@ -184,7 +184,34 @@ class DLL
 
     void insertAt (size_t pos, const T& elem)
     {
-        //srqdata shte go doopravim
+        Node *curr = first;
+        DLL list ;
+        size_t counter = 0;
+        while (counter < pos)
+        {
+            list.push_back(curr->data);
+            curr = curr->next;
+            counter += 1;
+        }
+        
+        list.push_back(elem);
+        Node* curr2 =curr;
+         
+        while (curr2 != nullptr)
+        {
+            if (curr2 == last)
+            {
+                list.push_back(curr2->data);
+                curr2 = curr2->next;
+            }
+            else
+            {
+                list.push_back(curr2->next->data);
+                curr2 = curr2 -> next;
+            }
+        }
+        this->first = list.first;
+        this->last = list.last;
     }
 };
 

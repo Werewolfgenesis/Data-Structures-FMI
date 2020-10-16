@@ -89,7 +89,7 @@ class Vector
        }
        const T& last()
        {
-           return this->data[size];
+           return this->data[size - 1];
        }
        
     };
@@ -105,30 +105,34 @@ public:
     {
         stack = new Vector<T>();
     }
+    ~Stack()
+    {
+       delete this->stack;
+    }
     //empty
     bool empty()
     {
-      return stack->isEmpty();
+      return this->stack->isEmpty();
     }
     //size
     int size()
     {
-        return stack->capacity();
+        return this->stack->capacity();
     }
     //back
-    const T& back()
+    const T& top()
     {
-        return stack->last();
+        return this->stack->last();
     }
     //push_back
     void pushBack(const T& elem)
     {
-        stack->push_back(elem);
+        this->stack->push_back(elem);
     }
     //pop_back
     void pop_back()
     {
-        stack->pop_back();
+        this->stack->pop_back();
     }
 };
 int main()
@@ -136,7 +140,10 @@ int main()
    Stack<int> *v = new Stack<int>();
     v->pushBack(3);
     v->pushBack(4);
-    v->pushBack(5);
+    v->pushBack(5); 
+    //v-(345)
+    //v->size - 3
+    //v->empty - 0
     delete v;
     //return 0;
 }

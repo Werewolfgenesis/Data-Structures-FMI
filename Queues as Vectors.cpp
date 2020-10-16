@@ -1,7 +1,7 @@
 //queue => first in first out
 #include <iostream>
 #include "Vector.cpp"
-
+//see vector.cpp
 template <class T>
 class Queue
 {

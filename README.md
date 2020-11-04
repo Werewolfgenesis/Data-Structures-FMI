@@ -10,3 +10,6 @@ https://en.cppreference.com/w/cpp/container/stack
 
 //std::queue
 http://www.cplusplus.com/reference/queue/queue/
+
+//std::vector
+https://en.cppreference.com/w/cpp/container/vector

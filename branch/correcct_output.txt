@@ -1,0 +1,3 @@
+Making input viable....
+Changes made to input:
+a{unviable} -> 0{viable}L

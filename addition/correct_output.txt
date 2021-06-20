@@ -1,0 +1,25 @@
+//////////////Adding...///////////////
+*********************Decrementing...*****************
+4{decrement} -> 3{halt}
+
+*********************Incrementing...*****************
+5{increment} -> 6{halt}
+
+*********************Decrementing...*****************
+3{decrement} -> 2{halt}
+
+*********************Incrementing...*****************
+6{increment} -> 7{halt}
+
+*********************Decrementing...*****************
+2{decrement} -> 1{halt}
+
+*********************Incrementing...*****************
+7{increment} -> 8{halt}
+
+*********************Decrementing...*****************
+1{decrement} -> 0{halt}
+
+*********************Incrementing...*****************
+8{increment} -> 9{halt}
+

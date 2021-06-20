@@ -1,3 +1,0 @@
-*********************Decrementing...*****************
-0{decrement} -> 9{decrement}L
-1{decrement} -> 0{halt}

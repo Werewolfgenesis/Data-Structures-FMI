@@ -16,9 +16,7 @@ template<typename T> class Queue{
 
     public:
     Queue() = default;
-    Queue(const Queue<T>&) = default;
-    Queue<T>& operator=(const Queue<T>&) = default;
-    ~Queue() = default;
+    ~Queue();
 
     T front() const;
     T back() const;
@@ -31,6 +29,14 @@ template<typename T> class Queue{
     
 };
 
+template<typename T> inline Queue<T>::~Queue(){
+    while(this->first){
+        Node<T>* to_del = this->first;
+        this->first = this->first->next;
+        delete to_del;
+    }
+    
+}
 //O(1)
 template<typename T> inline T Queue<T>::front() const{
     return this->first->data;
